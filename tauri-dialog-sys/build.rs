@@ -27,7 +27,11 @@ fn main() {
       .flag("-x")
       .flag("objective-c");
     println!("cargo:rustc-link-lib=framework=Cocoa");
-  } else {
+  } else if target.contains("windows") {
+    build
+      .file("boxer/boxer_win.c");
+    println!("cargo:rustc-link-lib=user32");
+   } else {
     panic!("unsupported target");
   }
 
