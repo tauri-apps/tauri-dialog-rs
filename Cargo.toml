@@ -1,0 +1,8 @@
+[package]
+name = "tauri-dialog"
+version = "0.1.0"
+authors = ["Lucas Nogueira <lucas@tauri.studio>"]
+edition = "2018"
+
+[dependencies]
+tauri-dialog-sys = { path = "./tauri-dialog-sys", version = "0.1" }

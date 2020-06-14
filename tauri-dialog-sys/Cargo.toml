@@ -1,0 +1,9 @@
+[package]
+name = "tauri-dialog-sys"
+version = "0.1.0"
+authors = ["Lucas Nogueira <lucas@tauri.studio>"]
+edition = "2018"
+
+[build-dependencies]
+cc = "1"
+pkg-config = "0.3"
