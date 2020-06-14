@@ -20,6 +20,15 @@ fn main() {
     for path in gtk3.include_paths {
       build.include(path);
     }
+  } else if target.contains("apple") {
+    build
+      .file("boxer/boxer_osx.m")
+      .define("OBJC_OLD_DISPATCH_PROTOTYPES", "1")
+      .flag("-x")
+      .flag("objective-c");
+    println!("cargo:rustc-link-lib=framework=Cocoa");
+  } else {
+    panic!("unsupported target");
   }
 
   build.compile("boxer");
