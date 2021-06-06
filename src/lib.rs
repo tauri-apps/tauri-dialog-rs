@@ -1,3 +1,5 @@
+//! This crate is no longer maintained. Tauri now uses [rfd](https://github.com/PolyMeilex/rfd).
+
 use tauri_dialog_sys::show_dialog;
 pub use tauri_dialog_sys::{DialogButtons, DialogSelection, DialogStyle};
 

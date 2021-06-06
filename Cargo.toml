@@ -1,11 +1,14 @@
 [package]
 name = "tauri-dialog"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Lucas Nogueira <lucas@tauri.studio>"]
 edition = "2018"
 license = "MIT"
 repository = "https://github.com/tauri-apps/tauri-dialog-rs"
-description = "Native message dialogs library"
+description = "This crate is no longer maintained."
+
+[badges]
+maintenance = { status = "deprecated" }
 
 [dependencies]
 tauri-dialog-sys = { path = "./tauri-dialog-sys", version = "0.1" }
